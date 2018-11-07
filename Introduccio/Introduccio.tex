@@ -1,0 +1,31 @@
+\chapter{Introducció}
+\label{chap:intro}
+
+Degut a que no hi havia cap projecte que em cridés l'atenció més que un altre, tenia certs dubtes en l'elecció del projecte. Un dia comentant-ho amb el meu company de grau Marc Brunet Preses em va oferir la possibilitat de treballar conjuntament en el seu projecte de fi de grau, ja que era prou extens com per encabir dues o més persones.
+
+Aquest projecte consisteix en un controlador de vehicles elèctrics, que en resum vindria a ser fer el disseny que va des d'una bateria fins a un motor elèctric. Aquest projecte té principalment dues grans agrupacions: La primera vindria a ser el gestor de les bateries que s'encarrega de \newline l'optimització en la càrrega i descàrrega de les bateries per a maximitzar el seu rendiment i també millorar la vida útil de la bateria. El segon bloc és l'encarregat de controlar el motor, és a dir, l'encarregat de subministrar al motor el corrent necessari en funció de diferents paràmetres, com ara l'estat de càrrega de les bateries o la potència que l'usuari li demani al motor per anar més ràpid. A més a més quan el motor frena, genera un corrent negatiu el qual també s'haurà de tindre en compte.
+
+Un cop vaig començar a buscar informació d'aquest món em va cridar molt més l'atenció la part del gestor de les bateries, ja que el fet de controlar una sèrie de bateries pot tenir moltíssimes utilitats, sobretot en el món industrial. A més a més tot indica que serà un component vital en el futur que ens oferirà la tecnologia. Degut a que encara és una tecnologia que es troba en desenvolupament i els preus segueixen sent molt alts és el moment perfecte per a poder agafar tots aquests coneixements i preparar-me per al futur. És per això que vaig optar per centrar-me més en la part del controlador de bateries, més conegut com a BMS, ja que m'oferia expandir els meus coneixements electrònics.
+
+
+\section{Motivacions a l'hora de fer un gestor de bateries}
+Degut a que l'electrònica és el camp de l'enginyeria que s'ha donat menys en el meu grau i per tant, del qual disposo menys coneixements vaig veure la gran possibilitat de treballar en un projecte pràcticament electrònic en el qual podia expandir els meus coneixement en aquest camp. A més a més, el fet de treballar amb bateries em dóna els coneixements necessaris per a un sense fi de projectes que podrien necessitar una bateria pel mig, sobretot per a xarxes sense fil. No només això, sinó que el projecte hem permet posar en pràctica la tecnologia Arduino, que s'ha treballat com microcontrolador durant el llarg del grau, per tal de posar de forma pràctica i en un cas real tota la teoria que he pogut sintetitzar en aquest. 
+\smallskip \newline
+A més a més com ja he comentat prèviament penso que el fet d'ampliar els meus coneixements en aquest món m'ajudarà molt en la meva formació com a enginyer. A més a més penso que no únicament aprendré sobre la gestió que desenvolupa un controlador de bateries, de tots els conceptes que hi apareixen, sinó que tindré d'una forma molt més clara el concepte de generador per a qualsevol tipus de càrrega. Amb això vull dir que el fet de conèixer molt millor el món de les bateries em permetrà conèixer quin tipus de bateria és la més adient per a cada situació.
+
+\section{Objectius a assolir}
+El nostre objectiu principal consisteix en la formació en el món dels sistemes encarregats de controlar bateries i motors, també aprenent els propis conceptes d'aquests. Amb aquest aprenentatge el que volem és poder tenir una opinió molt més crítica tant en el sentit de mercat com en el sentit tecnològic. Això ens farà ser molt més conscients de com tendirà la tecnologia en els pròxims anys i de la importància de conèixer tots aquests conceptes.
+Els objectius que vam establir a l'inici era la realització d'un prototip que permetés controlar un motor capaç de fer moure una bicicleta amb una bateria. Al moment d'indagar en la part tècnica ens vam adonar que vam ser massa ambiciosos per tant sols fer-ne un prototip. Per aquest motiu hem escorçat els objectius per tal d'aprofundir més en tenir clars els conceptes ja que l'electrònica ha estat el camp que menys s'ha tractat al grau, a més que molta part de tot aquest sistema funciona amb tensions i corrents mai donades al grau d'enginyeria de Sistemes TIC que es donarien més en un grau d'elèctrica. 
+
+Personalment m'he posat com a objectiu plantejar de forma teòrica i argumentada el funcionament d'un gestor de bateries, tot aprenent les diferents bateries que existeixen, les avantatges i desavantatges de cada tipus i quina implementació tenen a la vida real. Estaria molt content si assolís implementar i entendre almenys l'esquemàtic de tota la circuiteria d'aquest gestor, tot entenent cadascuna de les parts i funcions que aquest desenvolupa. A més per la informació trobada s'ha plantejat fer aquest gestor de forma escalable, és a dir, que no sigui el típic BMS que et trobaries al mercat, delimitat a un cert voltatge i amperatge. El fet de generar un BMS escalable, fa que sigui molt més modular i flexible al moment de les diferents aplicacions que pot arribar a tenir. Molt segurament l'arquitectura d'aquest BMS serà de Mestre-Esclau, on el mestre serà el BMS amb control i els esclaus es connectaran a aquest mestre.
+A més s'implementarà un sistema de control per tal de poder afegir certa modularitat i configuració d'una forma còmoda. 
+
+\section{Possibles aplicacions} 
+
+Les possibles aplicacions del BMS en el que ens hem basat es troben en un gran rang. Partint de l'elecció de les bateries de LiPo com a font d'energia per a un motor Brushless i que una placa BMS podria controlar fins a 60V, podríem comptar qualsevol motor dintre d'aquest rang. Aquí entrarien des de motors RC fins a motors com els d'un petit vehicle elèctric. A part es poden afegir mòduls esclau que anirien multiplicant aquests marges en funció de la quantitat d'esclaus que s'afegissin. Tenint 4 mòduls, es podrien arribar a controlar fins a 240V.
+
+L'aplicació doncs dependrà de fins a on arribem depenent del repte que ens suposi aquest projecte. Un cop assolits els coneixements del controlador, valorarem la seva complexitat i en funció d'aquesta, optarem per anar més a una implementació real o una implementació teòrica.
+
+
+
+
